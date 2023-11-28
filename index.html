@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cooky Market</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- FONT -->
+        <link
+            href="https://fonts.cdnfonts.com/css/sf-ui-text-2"
+            rel="stylesheet"
+        />
+        <!-- MONTSERRAT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="content">
+                <nav class="navbar">
+                    <!-- TABLET & MOBILE -->
+
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            class="svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="3em"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+                    <div class="row-left">
+                        <img
+                            src="https://www.cooky.vn/React/Images/Logos/logo.svg"
+                            alt=""
+                            class="logo"
+                        />
+
+                        <form action="" class="search-form">
+                            <input
+                                type="text"
+                                name="search"
+                                class="search_input"
+                                placeholder="Tìm công thức hoặc sản phẩm "
+                            />
+
+                            <button type="submit" class="submit_btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <button type="reset" class="submit_clear">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="row-right">
+                        <!-- APP -->
+                        <ul class="app">
+                            <li>
+                                <a href="#!" class="submit_app"
+                                    >Tải App Cooky
+                                </a>
+
+                                <ul class="app_hover">
+                                    <li>- Đặt dễ hơn</li>
+                                    <li>- Thao tác dễ dàng</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- ICONS -->
+                        <div class="icon">
+                            <img
+                                src="https://www.cooky.vn/React/Images/Icons/heart-big-white.svg"
+                                alt=""
+                                class="icon-1"
+                            />
+                            <img
+                                src="https://www.cooky.vn/React/Images/Icons/cart.svg"
+                                alt=""
+                                class="icon-2"
+                            />
+                            <ul class="ic-3_hover">
+                                <li>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/call.svg"
+                                        alt=""
+                                        class="icon-3"
+                                    />
+
+                                    <ul class="ic3">
+                                        <li>HOTLINE:19002041</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- SELECT -->
+                        <div class="city_hover">
+                            <div class="city">
+                                <div class="select-city">TP.HCM</div>
+                                <div class="chevron">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="cty_hover">
+                                <div class="cty cty-one">
+                                    <p class="desc">TP.HCM</p>
+                                </div>
+                                <div class="cty cty-two">
+                                    <p class="desc">Hà Nội .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action">
+                            <div class="avatar">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            Đăng Nhập
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- TABLE & MOBILE HEADER -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <div class="menu-drawer">
+                <a href="#!">
+                    <img
+                        src="https://www.cooky.vn/React/Images/Logos/logo.svg"
+                        alt=""
+                        class="img"
+                        
+                    />
+                </a>
+                <div class="row-right">
+                    <!-- APP -->
+                    <ul class="app">
+                        <li>
+                            <a href="#!" class="submit_app">Tải App Cooky </a>
+
+                            <ul class="app_hover">
+                                <li>- Đặt dễ hơn</li>
+                                <li>- Thao tác dễ dàng</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ICONS -->
+                    <div class="icon">
+                        <img
+                            src="https://www.cooky.vn/React/Images/Icons/heart-big-white.svg"
+                            alt=""
+                            class="icon-1 ycon"
+                        />
+                        <img
+                            src="https://www.cooky.vn/React/Images/Icons/cart.svg"
+                            alt=""
+                            class="icon-2 ycon"
+                        />
+                        <ul class="ic-3_hover">
+                            <li>
+                                <img
+                                    src="https://www.cooky.vn/React/Images/Icons/call.svg"
+                                    alt=""
+                                    class="icon-3 ycon"
+                                />
+
+                                <ul class="ic3">
+                                    <li>HOTLINE:19002041</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SELECT -->
+                    <div class="city_hover">
+                        <div class="city">
+                            <div class="select-city">TP.HCM</div>
+                            <div class="chevron">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="cty_hover">
+                            <div class="cty cty-one">
+                                <p class="desc">TP.HCM</p>
+                            </div>
+                            <div class="cty cty-two">
+                                <p class="desc">Hà Nội .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="action">
+                        <div class="avatar">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        Đăng Nhập
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main style="height: 4000px">
+            <div class="hero">
+                <div class="content">
+                    <img
+                        src="https://image.cooky.vn/abn/s1065x333/63341275-f3e2-4b0c-8263-2e59dd8197f6.png"
+                        alt=""
+                        class="images"
+                    />
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="content">
+                    <div class="category-item_top">
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/6285452a-e356-479a-a57f-27e8fc537d6e.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Thịt heo</span>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/8d501a5c-7f7c-4fe5-8fec-47581ff7e1af.gif"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Hải Sản</span>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/5ae0852a-d689-4b6b-9e01-ac040551b034.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Thịt Bò</span>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/bc1d78e9-2a3e-48da-8e73-7ca12427f89c.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Rau Củ</span>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/382d18b7-94cc-4d7b-aaec-f423e3a20dfe.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Gà & Vịt</span>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/ae618403-684d-4390-a2b7-f799fc4511f9.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Trứng & Đậu</span>
+                        </div>
+                    </div>
+                    <!-- Category BOT -->
+                    <div class="category-item_bot">
+                        <!-- item 1 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/5e26190e-e642-4a3a-ba3c-9c82e02ee9e2.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Trái Cây</span>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/1cdb6a95-16b8-4f19-a4f1-93724f19f6ce.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Lương Thực</span>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/99360d80-85b0-46de-801f-d459ed45e948.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Lẩu</span>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/8fa42c09-23b6-40d6-b33e-8c83713341ba.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Món Chay</span>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/6cc6a33e-05be-440c-a719-b09bdace0897.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Đồ Uống</span>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="item1">
+                            <img
+                                src="https://image.cooky.vn/ads/s320/9cdc72d3-9775-499f-b50b-42d9e181fb54.png"
+                                alt=""
+                                class="category_images"
+                            />
+                            <span class="name">Sữa & Phô Mai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="content">
+                    <h1 class="title Title">
+                        Thùng Thực Phẩm Miễn Phí (Đơn > 250K)
+                    </h1>
+                    <div class="row">
+                        <!-- item 1 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25791/s200x200/00808c16-bd5d-46df-abfb-c4f26caae499.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png "
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Lương Thực 4 Loại (Bill Trên
+                                    354K)
+                                </h2>
+                                <span class="notes">4 Loại</span>
+                                <div class="row">
+                                    <label class="price">103,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25127/s200x200/3ffff03b-de5b-4e8d-887d-6b40b5e1fc36.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Rau Củ 4 Loại (Bill Trên
+                                    250K)
+                                </h2>
+                                <span class="notes">4 Loại</span>
+                                <div class="row">
+                                    <label class="price">66,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25182/s200x200/cef52a7a-eb43-4719-9752-606cf6c50b0d.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Rau Củ 4 Loại (Bill Trên
+                                    250K)
+                                </h2>
+                                <span class="notes">6 Loại</span>
+                                <div class="row">
+                                    <label class="price">106,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25512/s200x200/63ca1ec4-718a-4b07-9936-34721695a5ad.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Trứng 3 Loại (Bill Trên 451K)
+                                </h2>
+                                <span class="notes">3 Loại</span>
+                                <div class="row">
+                                    <label class="price">111,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25793/s200x200/9017ea2c-eb54-4725-b549-d9ffc82f9d0f.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Bánh Kẹo 7 Loại (Bill Trên
+                                    353K)
+                                </h2>
+                                <span class="notes">7 Loại</span>
+                                <div class="row">
+                                    <label class="price">82,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25450/s200x200/390e8007-63af-459b-b5f0-57183c55bb7f.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Trái Cây 3 Loại (Bill Trên
+                                    352K)
+                                </h2>
+                                <span class="notes">3 Loại</span>
+                                <div class="row">
+                                    <label class="price">97,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-bot">
+                        <!-- item 1 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25852/s200x200/b5da4c32-4a7d-422f-a065-33314d5795e2.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png "
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Thịt Bò Nhập Khẩu 1 (Bill
+                                    Trên 602K)
+                                </h2>
+                                <span class="notes">2 Loại</span>
+                                <div class="row">
+                                    <label class="price">168,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25513/s1124x1124/00ebc99d-2e7f-4a8f-8b1d-8b75a3863a7d.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Gia Vị 7 Loại (Bill Trên
+                                    452K)
+                                </h2>
+                                <span class="notes">7 Loại</span>
+                                <div class="row">
+                                    <label class="price">118,500đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25451/s1124x1124/d2b7d8ca-3d03-432c-88cf-818399737bdd.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Trái Cây 5 Loại (Bill Trên
+                                    601K)
+                                </h2>
+                                <span class="notes">5 Loại</span>
+                                <div class="row">
+                                    <label class="price">173,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25512/s200x200/63ca1ec4-718a-4b07-9936-34721695a5ad.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Trứng 3 Loại (Bill Trên 451K)
+                                </h2>
+                                <span class="notes">3 Loại</span>
+                                <div class="row">
+                                    <label class="price">111,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25793/s200x200/9017ea2c-eb54-4725-b549-d9ffc82f9d0f.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Bánh Kẹo 7 Loại (Bill Trên
+                                    353K)
+                                </h2>
+                                <span class="notes">7 Loại</span>
+                                <div class="row">
+                                    <label class="price">82,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25450/s200x200/390e8007-63af-459b-b5f0-57183c55bb7f.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+                            <img
+                                src="https://image.cooky.vn/icon/s50x50/db51a029-20d3-4ecc-81e6-db05f5e370a8.png"
+                                alt=""
+                                class="free"
+                            />
+                            <div class="body">
+                                <h2 class="sub-title">
+                                    (Miễn Phí) Túi Trái Cây 3 Loại (Bill Trên
+                                    352K)
+                                </h2>
+                                <span class="notes">3 Loại</span>
+                                <div class="row">
+                                    <label class="price">97,000đ</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="see-more">
+                <div class="content">
+                    <h2 class="title">
+                        <a
+                            href="https://www.cooky.vn/ho-chi-minh/market/search?type=collection&id=17803&sortType=5"
+                            >Xem thêm Thùng Thực Phẩm Miễn Phí (Đơn > 250K)</a
+                        >
+                    </h2>
+                </div>
+            </div>
+
+            <div class="menu-two">
+                <div class="content">
+                    <h2 class="Title">
+                        ✨ Dành cho Khách hàng MỚI - CHỈ 1K ✨
+                    </h2>
+                    <div class="row">
+                        <!-- item 1 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/24772/s200x200/49db2eba-5611-4c2b-a156-6a1929f05b3e.png"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <div class="Body">
+                                <h2 class="Sub-title">
+                                    [Bò Úc] Knuckle Đùi Gọ Bò
+                                </h2>
+                                <span class="Notes">300 - 320g</span>
+                                <div class="row">
+                                    <label class="Price">1,000đ</label>
+                                    <label class="redu_price">109k</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/24780/s1124x1124/427af47b-55dc-4787-b275-084e0f38ea77.png"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <div class="Body">
+                                <h2 class="Sub-title">
+                                    [Bò Úc] Ribeye Đầu Thăn Ngoại Bò
+                                </h2>
+                                <span class="Notes">250 - 260g</span>
+                                <div class="row">
+                                    <label class="Price">1,000đ</label>
+                                    <label class="redu_price">119k</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/25411/s1124x1124/54068814-9325-4619-8b5b-36fdaa5744f8.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <div class="Body">
+                                <h2 class="Sub-title">Thịt Ghẹ Vũng Tàu</h2>
+                                <span class="Notes">450-500g</span>
+                                <div class="row">
+                                    <label class="Price">1,000đ</label>
+                                    <label class="redu_price">169k</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/24867/s1124x1124/ad18a3ec-6ea1-4a6a-a75b-d088a4de8453.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <div class="Body">
+                                <h2 class="Sub-title">
+                                    Mực Sữa Mino Bình Định
+                                </h2>
+                                <span class="Notes">450-500g</span>
+                                <div class="row">
+                                    <label class="Price">1,000đ</label>
+                                    <label class="redu_price">119k</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/4698/s1124x1124/b8fed440-2a9e-49aa-b7aa-8a687f251560.jpeg"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <div class="Body">
+                                <h2 class="Sub-title">Cá Đù Ốp 1 Nắng</h2>
+                                <span class="Notes">500g (12-14 Con)</span>
+                                <div class="row">
+                                    <label class="Price">1,000đ</label>
+                                    <label class="redu_price">99k</label>
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="item">
+                            <img
+                                src="https://image.cooky.vn/posproduct/g0/24769/s1124x1124/8939fd0d-bf80-43ce-85a6-406cb5785062.png"
+                                alt=""
+                                class="thumb"
+                            />
+
+                            <div class="Body">
+                                <h2 class="Sub-title">
+                                    [Bò Úc] Shin Shank Bắp Bò
+                                </h2>
+                                <span class="Notes">300 - 320g</span>
+                                <div class="row">
+                                    <label class="Price">1,000đ</label>
+                                    <label class="redu_price">109k</label>
+
+                                    <img
+                                        src="https://www.cooky.vn/React/Images/Icons/plus-filled-red.svg"
+                                        alt=""
+                                        class="add"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,583 @@
+/* PC */
+
+@media screen and (min-width: 992px) {
+    .toggle-menu {
+        display: none;
+    }
+    .mobile-header {
+        display: none;
+    }
+
+    .thumb {
+        width: 100%;
+    }
+}
+
+/* TABLET & MOBILE */
+
+@media screen and (max-width: 991px) {
+    .header {
+        width: calc(100vh + 100vw);
+    }
+
+    .navbar {
+        padding: 20px 0 25px;
+    }
+
+    .navbar .row-right {
+        display: none;
+    }
+
+    .navbar .row-left {
+        padding: 0 50px;
+    }
+
+    .navbar .row-left .search-form {
+        margin-left: 50px;
+        padding: 20px 50px;
+    }
+
+    .navbar .row-left .search-form .submit_btn {
+        width: 60px;
+        /* margin-left: -30px; */
+    }
+
+    .toggle-menu svg {
+        color: #fff;
+        margin-top: 38px;
+        margin-left: 20px;
+        height: 3em;
+    }
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        padding: 60px;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+        background-color: rgb(189, 129, 95);
+    }
+    .menu-drawer .img {
+        width: 170px;
+    }
+    .row-right {
+        flex-direction: column;
+        margin-left: 0;
+        margin-left: -20px;
+        margin-top: 80px;
+    }
+    .row-right .submit_app {
+        font-size: 2.8rem;
+        padding: 20px 50px;
+    }
+    .row-right .icon {
+        margin-top: 50px;
+        gap: 35px;
+    }
+    .row-right .ycon {
+        width: 80px;
+        height: 70px;
+    }
+    .city_hover {
+        margin-top: 50px;
+    }
+    .city {
+        padding: 20px 80px;
+        margin-left: 0;
+    }
+    .select-city {
+        margin-left: -40px;
+        font-size: 2rem;
+    }
+
+    .row-right .action {
+        margin-top: 150px;
+        margin-left: -250px;
+        font-size: 2.5rem;
+        padding: 20px 50px;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+    .row-right .avatar {
+        margin-left: 0;
+        font-size: 2.3rem;
+    }
+    .category:after {
+        left: 60.5%;
+    }
+    .category::before {
+        left: 64%;
+    }
+
+    /* Menu */
+
+    .Title {
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .menu .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .menu .item .sub-title {
+        font-size: 3.2rem;
+    }
+
+    .menu .dots {
+        margin-left: 100px;
+    }
+    .see-more {
+        /* width: 80%; */
+    }
+    .see-more .title {
+        width: 210%;
+        font-size: 2.5rem;
+        white-space: nowrap;
+    }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .content {
+        /* margin: 0; */
+        margin-left: 60px;
+        /* width: 0;    */
+        /* margi2: 0 auto; */
+    }
+    .toggle-menu svg {
+        color: #fff;
+        margin-top: 38px;
+        margin-left: 20px;
+        height: 10em;
+    }
+    .navbar .logo {
+        width: 260px;
+    }
+
+    .category {
+        margin: 50px 80px;
+    }
+
+    .category .item1 .name {
+        font-size: 3.5rem;
+        font-style: oblique;
+    }
+    .Title {
+        font-size: 9.5rem;
+    }
+    .menu .row {
+        margin-top: 80px;
+    }
+    .menu .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+    }
+    .thumb {
+        height: 900px;
+        /* width: 400px; */
+    }
+    .menu-drawer .img {
+        width: 460px;
+    }
+    .row-right .submit_app {
+        font-size: 8rem;
+        padding: 60px 80px;
+    }
+    .row-right .ycon {
+        width: 180px;
+        height: 170px;
+    }
+    .row-right .icon {
+        margin-top: 100px;
+    }
+    .city {
+        padding: 80px 320px;
+        margin-left: 0;
+    }
+    .select-city {
+        font-size: 8rem;
+        margin-left: -180px;
+    }
+
+    .chevron {
+        font-size: 7rem;
+        margin-left: 20px;
+    }
+    .row-right .action {
+        font-size: 8rem;
+        padding: 80px;
+        margin-left: -90px;
+    }
+    .row-right .avatar {
+        font-size: 7rem;
+        margin: 0 30px;
+    }
+    .navbar {
+        padding: 80px;
+    }
+
+    .search-form .submit_btn {
+        font-size: 7rem;
+        margin-right: 80px;
+        margin-left: 20px;
+    }
+    .navbar .search_input {
+        width: 1500px;
+        padding: 40px 0;
+        font-size: 6rem;
+        margin-right: 150px;
+        /* margin-left: 10px;` */
+    }
+    .navbar .submit_clear {
+        font-size: 7rem;
+        right: 50px;
+    }
+    .search_input::placeholder {
+        font-size: 6.9rem;
+    }
+    .navbar .row-left {
+        margin-left: 300px;
+    }
+    .header {
+        width: 3500px;
+    }
+    .hero .images {
+        width: 2890px;
+    }
+    .category_images {
+        width: 320px;
+        margin-left: 45px;
+    }
+    .category-item_top {
+        margin-top: 80px;
+        margin-bottom: 120px;
+        /* gap: 140px; */
+    }
+
+    .category .item1 .name {
+        font-size: 7rem;
+        margin-top: 80px;
+    }
+    .menu .body {
+        margin-top: 50px;
+        padding: 30px;
+    }
+    .menu .item .sub-title {
+        font-size: 7rem;
+    }
+    .menu .free {
+        width: 200px;
+    }
+    .menu .body .notes {
+        margin-top: 50px;
+        font-size: 6rem;
+    }
+    .menu .body .price {
+        font-size: 8rem;
+    }
+    .menu .body .add {
+        width: 90%;
+        margin-top: -30px;
+        /* margin-bottom: 50px; */
+    }
+    .menu .item:hover .add {
+        width: 100%;
+    }
+    .see-more .title {
+        font-size: 8rem;
+        font-weight: 600;
+        font-style: italic;
+        width: 800%;
+    }
+
+    .menu-two {
+        margin-top: 80px;
+    }
+
+    .menu-two .row {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+    }
+    .Body {
+        margin-top: 50px;
+        padding: 40px;
+    }
+    .Sub-title {
+        font-size: 8rem;
+        height: 180px;
+    }
+    .Notes {
+        font-size: 5.8rem;
+    }
+    .Price {
+        font-size: 8rem;
+    }
+
+    .redu_price {
+        font-size: 6rem;
+    }
+    .redu_price::before {
+        width: 150px;
+        height: 4px;
+        top: 30px;
+    }
+    .row-right {
+        margin-top: 180px;
+    }
+    .menu-two .add {
+        width: 90px;
+        margin-top: -30px;
+        /* margin-bottom: 50px; */
+    }
+    .menu-two .item:hover .add {
+        width: 100px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .content {
+        margin-left: 80px;
+    }
+    .toggle-menu svg {
+        color: #fff;
+        margin-top: 28px;
+        margin-left: 20px;
+        height: 5em;
+    }
+
+    .menu-two .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .thumb {
+        height: 310px;
+    }
+    .hero .images {
+        margin-top: 40px;
+        width: 1380px;
+    }
+    .category_images {
+        width: 320px;
+        margin-left: 55px;
+    }
+    .category-item_top {
+        margin-top: 80px;
+        margin-bottom: 120px;
+        /* gap: 140px; */
+    }
+    .category-item_top,
+    .category-item_bot {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category:after {
+        left: 90%;
+    }
+
+    .category .item1 .name {
+        font-size: 6rem;
+        margin-top: 80px;
+    }
+    .search-form .submit_btn {
+        font-size: 5rem;
+        margin-right: 80px;
+        margin-left: 20px;
+    }
+    .navbar .logo {
+        width: 260px;
+    }
+    .navbar .search_input {
+        width: 550px;
+        padding: 30px 0;
+        font-size: 4rem;
+        margin-right: 150px;
+        /* margin-left: 10px;` */
+    }
+    .navbar .submit_clear {
+        font-size: 5rem;
+        right: 50px;
+    }
+    .search_input::placeholder {
+        font-size: 4.8rem;
+    }
+    .navbar .row-left {
+        margin-left: 20px;
+    }
+    .navbar {
+        padding: 40px 0;
+    }
+    .header {
+        width: 1800px;
+    }
+    .Title {
+        font-size: 6.5rem;
+    }
+    .menu .row {
+        margin-top: 80px;
+    }
+    .menu .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .thumb {
+        /* height: 400px; */
+        /* width: 400px; */
+        width: 100%;
+        height: 400px;
+    }
+    .menu .body {
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .menu .item .sub-title {
+        font-size: 5rem;
+    }
+    .menu .free {
+        width: 90px;
+        right: 80px;
+    }
+    .menu .body .notes {
+        margin-top: 50px;
+        font-size: 4rem;
+    }
+    .menu .body .price {
+        font-size: 6rem;
+    }
+    .menu .body .add {
+        width: 90px;
+        margin-top: -30px;
+        /* margin-bottom: 50px; */
+    }
+    .menu .item:hover .add {
+        width: 100px;
+    }
+    .see-more .title {
+        font-size: 5rem;
+        font-weight: 600;
+        font-style: italic;
+        /* width: 400%; */
+        width: 1400px;
+    }
+    .menu-two {
+        margin-top: 80px;
+    }
+
+    .menu-two .row {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+    }
+    .menu-two .item {
+        margin-left: 80px;
+    }
+    .Body {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .Sub-title {
+        font-size: 6rem;
+        height: 120px;
+    }
+    .Notes {
+        font-size: 4.8rem;
+        
+    }
+    .Price {
+        font-size: 8rem;
+    }
+
+    .redu_price {
+        font-size: 6rem;
+    }
+    .redu_price::before {
+        width: 150px;
+        height: 4px;
+        top: 30px;
+    }
+    .row-right {
+        margin-top: 180px;
+    }
+    .menu-two .thumb {
+        /* height: 400px; */
+        /* width: 400px; */
+        width: 100%;
+        height: 500px;
+    }
+    .menu-two .add {
+        width: 40%;
+        margin-top: -310px;
+        margin-right: -180px;
+        /* margin-bottom: 50px; */
+    }
+    .menu-two .item:hover .add {
+        width: 50%;
+    }
+    .row-right .action {
+        font-size: 5rem;
+        padding: 40px;
+        margin-left: -90px;
+        white-space: nowrap;
+        width: 500px;
+    }
+    .row-right .avatar {
+        font-size: 4rem;
+        margin: 0 30px;
+    }
+    .menu-drawer .img {
+        width: 260px;
+    }
+    .row-right .submit_app {
+        font-size: 5rem;
+        padding: 40px 60px;
+    }
+    .row-right .ycon {
+        width: 120px;
+        height: 110px;
+    }
+    .row-right .icon {
+        margin-top: 100px;
+    }
+    .city {
+        padding: 40px;
+        margin-left: 0;
+        width: 450px;
+    }
+    .select-city {
+        font-size: 5rem;
+        margin-left: 80px;
+    }
+    .chevron {
+        font-size: 4rem;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
